@@ -1,0 +1,12 @@
+.app {
+  position: relative;
+}
+
+.coordinate {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 401;
+  background-color: white;
+  width: 20%;
+}
