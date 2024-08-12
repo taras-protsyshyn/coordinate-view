@@ -2,6 +2,33 @@
   overflow: hidden;
   padding: 10px;
   border-radius: 5px;
+  background-color: white;
+  width: 20%;
+  min-width: 260px;
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+  height: 370px;
+}
+
+.wrapperClose {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.wrapper .title,
+.wrapper .input,
+.wrapper .btn {
+  opacity: 1;
+  /* TODO: here we should write a proper transition animation. 
+  For smooth animation we need handle a state when transition in continue */
+  /* transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0.2s; */
+}
+
+.wrapperClose .title,
+.wrapperClose .input,
+.wrapperClose .btn {
+  opacity: 0;
 }
 
 .title {
@@ -11,4 +38,15 @@
 .input {
   width: calc(100%);
   height: 300px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
