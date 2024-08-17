@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 
-import { ConsumerCoordinate, Map } from "./components";
+import { ConsumerCoordinate, Map, CopyURLBtn } from "./components";
 import { useCordsFromSearch } from "./hooks";
 
 import s from "./App.module.css";
@@ -33,6 +34,8 @@ function App() {
         onRemove={onRemove}
       />
       <Map setMap={setMap} coordinate={cords} />
+      <CopyURLBtn />
+      <Toaster />
     </div>
   );
 }
