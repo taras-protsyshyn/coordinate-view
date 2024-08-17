@@ -1,0 +1,1 @@
+export { useCordsFromSearch } from "./useCordsFromSearch";
