@@ -15,7 +15,7 @@ export const parseWGSDecimal = (str) => {
 export const parseUSCCartesian = (str) => {
   const cords = parse(str, new RegExp(/((x|х)-[0-9]*)(\s|,\s)((у|y)-[0-9]*)/gm));
 
-  console.log(cords);
+  // TODO: here should be a logic for convert USC Cartesian cords to WGS84
 
   return cords;
 };
@@ -29,7 +29,7 @@ export const paseCordsFromText = (text) => {
       cords = parser(text);
       if (cords.length > 0) break;
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
   }
 
