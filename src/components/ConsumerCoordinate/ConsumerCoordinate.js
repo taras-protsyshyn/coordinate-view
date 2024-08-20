@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Hamburger from "hamburger-react";
-import { getWGSDecimalFromText } from "./parseText";
+import { paseCordsFromText } from "./parseText";
 
 import s from "./ConsumerCoordinate.module.css";
 
@@ -13,7 +13,7 @@ export const ConsumerCoordinate = ({ className, onParse, cords, onSetView, onRem
   };
 
   const parse = () => {
-    onParse(getWGSDecimalFromText(text));
+    onParse(paseCordsFromText(text));
   };
 
   const clear = () => {
